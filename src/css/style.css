@@ -70,6 +70,7 @@ html #header #title #title-together, body #header #title #title-together {
   left: 25px;
 }
 html #header #ready-button, body #header #ready-button {
+  list-style-type: none;
   display: inline-block;
   width: min-content;
   border-radius: 40px;
@@ -78,14 +79,23 @@ html #header #ready-button, body #header #ready-button {
   font-size: 34px;
   box-shadow: 0px 5px #00000029;
 }
+html #header #ready-button a, body #header #ready-button a {
+  text-decoration: none;
+}
 html #header #ready-button h4, body #header #ready-button h4 {
+  text-decoration: none;
   padding: 20px 120px;
   margin: 0;
   color: #515151;
 }
+html #header #ready-button:hover, body #header #ready-button:hover {
+  box-shadow: none;
+  background-color: #DDD;
+}
 html #body #our-story, body #body #our-story {
-  height: 400px;
   background-color: #242334;
+  height: 400px;
+  box-shadow: 0px 10px #00000080;
 }
 
 /*# sourceMappingURL=style.css.map */
