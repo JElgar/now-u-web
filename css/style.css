@@ -67,7 +67,7 @@ html #header #nav-bar ul li:hover, body #header #nav-bar ul li:hover {
   color: black;
 }
 html #header #title, body #header #title {
-  height: 400px;
+  height: 50vh;
   position: relative;
   color: #000000BF;
   text-align: center;
@@ -96,20 +96,27 @@ html #header #title #title-together, body #header #title #title-together {
   left: 25px;
 }
 @media (max-width: 750px) {
+  html #header #title, body #header #title {
+    margin-top: 10vh;
+    height: 40vh;
+  }
   html #header #title h1, body #header #title h1 {
-    font-size: 100px;
+    position: unset;
+    font-size: 23vw;
     top: 180px;
   }
   html #header #title h3, body #header #title h3 {
-    font-size: 25px;
+    margin: 0;
   }
   html #header #title #title-time, body #header #title #title-time {
-    top: 140px;
-    right: 90px;
+    position: unset;
+    right: unset;
+    font-size: 8vw;
   }
   html #header #title #title-together, body #header #title #title-together {
-    top: 268px;
-    left: 5px;
+    position: unset;
+    left: unset;
+    font-size: 8vw;
   }
 }
 html #header #ready-button, body #header #ready-button {

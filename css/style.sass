@@ -79,7 +79,7 @@ html, body
           color: black
 
     #title
-      height: 400px
+      height: 50vh
       position: relative
       color: $header-font-color 
       text-align: center
@@ -106,20 +106,27 @@ html, body
         top: 255px
         left: 25px
       
-      @media (max-width: $break-point-mobile)
+    @media (max-width: $break-point-mobile)
+      #title
+        margin-top: 10vh
+        height: 40vh
         h1
+          position: unset
           font:
-            size: 100px
+            size: 23vw
           top: 180px
         h3
-          font:
-            size: 25px
+          margin: 0
         #title-time
-          top: 140px
-          right: 90px
+          position: unset
+          right: unset
+          font:
+            size: 8vw
         #title-together
-          top: 268px
-          left: 5px
+          position: unset
+          left: unset 
+          font:
+            size: 8vw
 
 
     #ready-button
