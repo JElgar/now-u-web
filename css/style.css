@@ -95,6 +95,23 @@ html #header #title #title-together, body #header #title #title-together {
   top: 255px;
   left: 25px;
 }
+@media (max-width: 750px) {
+  html #header #title h1, body #header #title h1 {
+    font-size: 100px;
+    top: 180px;
+  }
+  html #header #title h3, body #header #title h3 {
+    font-size: 25px;
+  }
+  html #header #title #title-time, body #header #title #title-time {
+    top: 140px;
+    right: 90px;
+  }
+  html #header #title #title-together, body #header #title #title-together {
+    top: 268px;
+    left: 5px;
+  }
+}
 html #header #ready-button, body #header #ready-button {
   list-style-type: none;
   display: inline-block;
