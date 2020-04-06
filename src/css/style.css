@@ -2,16 +2,41 @@
   font-family: "peace sans";
   src: url("../assets/fonts/peace_sans.otf") format("opentype");
 }
+html {
+  scroll-behavior: smooth;
+}
+
 html, body {
   margin: 0px;
   height: 100%;
   color: #515151;
   font-family: "Raleway", sans-serif;
-  font-size: 20px;
+  font-size: 25px;
+  font-weight: 300;
+}
+html a, body a {
+  text-decoration: none;
+  list-style-type: none;
 }
 html .button, body .button {
   background-color: white;
   color: #515151;
+}
+html .heading, body .heading {
+  margin: 0;
+  padding-top: 40px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 48px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+}
+html input, body input {
+  padding: 20px;
+  color: #161616BA;
+  font-size: 17px;
+  font-family: "Raleway", sans-serif;
 }
 html #header, body #header {
   height: 100%;
@@ -30,8 +55,11 @@ html #header #nav-bar ul, body #header #nav-bar ul {
   margin: 2% 3%;
 }
 html #header #nav-bar ul li, body #header #nav-bar ul li {
-  padding: 40px 70px;
+  padding: 40px 55px;
   display: inline;
+}
+html #header #nav-bar ul li a, body #header #nav-bar ul li a {
+  color: #515151;
 }
 html #header #nav-bar ul li:last-child, body #header #nav-bar ul li:last-child {
   padding-right: 0px;
@@ -89,13 +117,82 @@ html #header #ready-button h4, body #header #ready-button h4 {
   color: #515151;
 }
 html #header #ready-button:hover, body #header #ready-button:hover {
-  box-shadow: none;
-  background-color: #DDD;
+  box-shadow: 0px 7px #00000080;
+  background-color: #BBB;
+}
+html #header #ready-button:hover h4, body #header #ready-button:hover h4 {
+  color: black;
+}
+html #body, body #body {
+  color: white;
 }
 html #body #our-story, body #body #our-story {
   background-color: #242334;
-  height: 400px;
-  box-shadow: 0px 10px #00000080;
+  height: 1000px;
+}
+html #body #the-app, body #body #the-app {
+  background-color: #242334;
+}
+html #body #the-app #get-section, body #body #the-app #get-section {
+  text-align: center;
+  padding: 30px 20px;
+}
+html #body #the-app #get-section input, body #body #the-app #get-section input {
+  margin-left: 40px;
+}
+html #body #the-app #get-section a, body #body #the-app #get-section a {
+  color: #00B9FF;
+}
+html #body #the-app #get-section a:hover, body #body #the-app #get-section a:hover {
+  text-decoration: underline;
+}
+html #body #the-app #get-section #submit, body #body #the-app #get-section #submit {
+  margin-left: 0px;
+  padding: 17.7px;
+}
+html #body #get-inv, body #body #get-inv {
+  color: #515151;
+  text-align: center;
+}
+html #body #get-inv #contact-icons, body #body #get-inv #contact-icons {
+  padding: 20px;
+  color: #242334;
+  font-size: 2.2em;
+}
+html #body #get-inv #contact-icons a, body #body #get-inv #contact-icons a {
+  color: #242334;
+}
+html #body #get-inv #contact-icons a span, body #body #get-inv #contact-icons a span {
+  padding: 0px 20px;
+}
+html #body #get-inv h2, body #body #get-inv h2 {
+  color: #515151;
+}
+html #body #footer, body #body #footer {
+  height: 80px;
+  color: white;
+  font-size: 20px;
+  background-color: #242334;
+  background-height: 80px;
+}
+html #body #footer ul, body #body #footer ul {
+  list-style-type: none;
+  float: right;
+  margin-top: 28px;
+}
+html #body #footer ul li, body #body #footer ul li {
+  padding: 20px 20px;
+  display: inline;
+}
+html #body #footer ul li a, body #body #footer ul li a {
+  color: white;
+}
+html #body #footer ul li:last-child, body #body #footer ul li:last-child {
+  padding-right: 40px;
+}
+html #body #footer ul li:hover, body #body #footer ul li:hover {
+  text-decoration: underline;
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */

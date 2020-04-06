@@ -2,11 +2,16 @@ $font-color: #515151
 $header-font-color: #000000BF
 $link-font-size: 20px
 $gradient-color: rgba(36, 35, 52, 100)
+$heading-font-size: 48px
+$font-size: 25px
+$body-link-color: #00B9FF
 
 @font-face
     font-family: 'peace sans'
     src: url("../assets/fonts/peace_sans.otf") format('opentype')
 
+html
+  scroll-behavior: smooth
 
 html, body
   margin: 0px
@@ -14,12 +19,35 @@ html, body
   color: $font-color
   font:
     family: 'Raleway', sans-serif
-    size: $link-font-size
+    size: $font-size
+    weight: 300
+  
+  a
+    text-decoration: none
+    list-style-type: none
 
   .button
     background:
       color: white
     color: $font-color
+   
+  .heading
+    margin: 0
+    padding-top: 40px
+    width: 100%
+    text-align: center
+    color: white
+    font:
+      size: $heading-font-size
+      family: 'Raleway', sans-serif
+      weight: 300
+
+  input
+    padding: 20px
+    color: #161616BA
+    font:
+      size: $font-size - 8px
+      family: 'Raleway', sans-serif
 
   #header
     height: 100%
@@ -38,8 +66,10 @@ html, body
         float: right
         margin: 2% 3%
         li
-          padding: 40px 70px
+          padding: 40px 55px
           display: inline
+          a
+            color: $font-color
         li:last-child
           padding-right: 0px
         li:hover
@@ -94,12 +124,73 @@ html, body
         margin: 0
         color: $font-color
     #ready-button:hover
-      box-shadow: none
+      box-shadow: 0px 7px #00000080
       background:
-        color: #DDD
+        color: #BBB
+      h4
+        color: black
   
   #body
+    color: white
     #our-story
       background-color: $gradient-color
-      height: 400px
-      box-shadow: 0px 10px #00000080
+      height: 1000px
+    #the-app
+      background-color: $gradient-color
+      #get-section
+        text-align: center
+        padding: 30px 20px
+        input
+          margin:
+            left: 40px
+        a
+          color: $body-link-color
+        a:hover
+          text-decoration: underline
+        #submit
+          margin-left: 0px
+          padding: 17.7px
+
+    #get-inv
+      color: $font-color
+      text-align: center
+      #contact-icons
+        padding: 20px
+        color: $gradient-color
+        font:
+          size: 2.2em
+        a
+          color: $gradient-color
+          span
+            padding: 0px 20px
+      h2
+        color: $font-color
+    
+    #footer
+      height: 80px
+      color: white
+      font:
+        size: 20px
+      background:
+        color: $gradient-color
+        height: 80px
+      ul
+        list-style-type: none
+        float: right
+        margin-top: 28px
+        li
+          padding: 20px 20px
+          display: inline
+          a
+            color: white
+        li:last-child
+          padding-right: 40px
+        li:hover
+          text-decoration: underline
+          color: black
+
+        
+
+          
+
+      
