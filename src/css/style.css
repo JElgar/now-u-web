@@ -31,13 +31,37 @@ html #header #nav-bar ul li, body #header #nav-bar ul li {
 html #header #nav-bar ul li:last-child, body #header #nav-bar ul li:last-child {
   padding-right: 0px;
 }
+html #header #nav-bar ul li:hover, body #header #nav-bar ul li:hover {
+  text-decoration: underline;
+}
+html #header #title, body #header #title {
+  height: 400px;
+  position: relative;
+  color: #000000BF;
+  text-align: center;
+}
 html #header #title h1, body #header #title h1 {
   width: 100%;
   text-align: center;
-  color: #000000BF;
+  position: absolute;
   font-family: "peace sans", sans;
   font-size: 180px;
-  margin-top: 7%;
+  top: 100px;
+  margin: 0;
+}
+html #header #title h3, body #header #title h3 {
+  position: absolute;
+  width: 100%;
+  font-weight: 400;
+  font-size: 42px;
+}
+html #header #title #title-time, body #header #title #title-time {
+  top: 45px;
+  right: 200px;
+}
+html #header #title #title-together, body #header #title #title-together {
+  top: 255px;
+  left: 25px;
 }
 html #body #our-story, body #body #our-story {
   height: 400px;
