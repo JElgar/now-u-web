@@ -1,4 +1,5 @@
-$link-font-color: #515151
+$font-color: #515151
+$header-font-color: #000000BF
 $link-font-size: 20px
 
 @font-face
@@ -9,13 +10,19 @@ $link-font-size: 20px
 html, body
   margin: 0px
   height: 100%
-  color: $link-font-color
+  color: $font-color
   font:
     family: 'Raleway', sans-serif
     size: $link-font-size
 
+  .button
+    background:
+      color: white
+    color: $font-color
+
   #header
     height: 100%
+    text-align: center
     background:
       image: unquote("linear-gradient(rgba(36, 35, 52, 0),rgba(36, 35, 52, 0.1),rgba(36, 35, 52, 0.2), rgba(36, 35, 52, 100) )"), url("../assets/img/background.jpg")
       size: cover
@@ -36,11 +43,12 @@ html, body
           padding-right: 0px
         li:hover
           text-decoration: underline
+          color: black
 
     #title
       height: 400px
       position: relative
-      color: #000000BF
+      color: $header-font-color 
       text-align: center
      
       h1
@@ -65,6 +73,21 @@ html, body
       #title-together
         top: 255px
         left: 25px
+
+    #ready-button
+      display: inline-block
+      width: min-content
+      border-radius: 40px
+      margin:
+        top: 25vh
+      font:
+        family: 'peace sans', sans
+        size: 34px
+      box-shadow: 0px 5px #00000029
+      h4
+        padding: 20px 120px
+        margin: 0
+        color: $font-color
   
   #body
     #our-story

@@ -9,8 +9,13 @@ html, body {
   font-family: "Raleway", sans-serif;
   font-size: 20px;
 }
+html .button, body .button {
+  background-color: white;
+  color: #515151;
+}
 html #header, body #header {
   height: 100%;
+  text-align: center;
   background-image: linear-gradient(rgba(36, 35, 52, 0),rgba(36, 35, 52, 0.1),rgba(36, 35, 52, 0.2), rgba(36, 35, 52, 100) ), url("../assets/img/background.jpg");
   background-size: cover;
   background-position-x: center;
@@ -33,6 +38,7 @@ html #header #nav-bar ul li:last-child, body #header #nav-bar ul li:last-child {
 }
 html #header #nav-bar ul li:hover, body #header #nav-bar ul li:hover {
   text-decoration: underline;
+  color: black;
 }
 html #header #title, body #header #title {
   height: 400px;
@@ -62,6 +68,20 @@ html #header #title #title-time, body #header #title #title-time {
 html #header #title #title-together, body #header #title #title-together {
   top: 255px;
   left: 25px;
+}
+html #header #ready-button, body #header #ready-button {
+  display: inline-block;
+  width: min-content;
+  border-radius: 40px;
+  margin-top: 25vh;
+  font-family: "peace sans", sans;
+  font-size: 34px;
+  box-shadow: 0px 5px #00000029;
+}
+html #header #ready-button h4, body #header #ready-button h4 {
+  padding: 20px 120px;
+  margin: 0;
+  color: #515151;
 }
 html #body #our-story, body #body #our-story {
   height: 400px;
