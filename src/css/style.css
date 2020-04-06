@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "peace sans";
+  src: url("../assets/fonts/peace_sans.otf") format("opentype");
+}
+html, body {
+  margin: 0px;
+  height: 100%;
+  color: #515151;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+}
+html #header, body #header {
+  height: 100%;
+  background-image: linear-gradient(rgba(36, 35, 52, 0),rgba(36, 35, 52, 0.1),rgba(36, 35, 52, 0.2), rgba(36, 35, 52, 100) ), url("../assets/img/background.jpg");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: 80%;
+}
+html #header #nav-bar, body #header #nav-bar {
+  height: 10%;
+}
+html #header #nav-bar ul, body #header #nav-bar ul {
+  list-style-type: none;
+  float: right;
+  margin: 2% 3%;
+}
+html #header #nav-bar ul li, body #header #nav-bar ul li {
+  padding: 40px 70px;
+  display: inline;
+}
+html #header #nav-bar ul li:last-child, body #header #nav-bar ul li:last-child {
+  padding-right: 0px;
+}
+html #header #title h1, body #header #title h1 {
+  width: 100%;
+  text-align: center;
+  color: #000000BF;
+  font-family: "peace sans", sans;
+  font-size: 180px;
+  margin-top: 7%;
+}
+html #body #our-story, body #body #our-story {
+  height: 400px;
+  background-color: #242334;
+}
+
+/*# sourceMappingURL=style.css.map */

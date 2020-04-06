@@ -1,0 +1,51 @@
+$link-font-color: #515151
+$link-font-size: 20px
+
+@font-face
+    font-family: 'peace sans'
+    src: url("../assets/fonts/peace_sans.otf") format('opentype')
+
+
+html, body
+  margin: 0px
+  height: 100%
+  color: $link-font-color
+  font:
+    family: 'Raleway', sans-serif
+    size: $link-font-size
+
+  #header
+    height: 100%
+    background:
+      image: unquote("linear-gradient(rgba(36, 35, 52, 0),rgba(36, 35, 52, 0.1),rgba(36, 35, 52, 0.2), rgba(36, 35, 52, 100) )"), url("../assets/img/background.jpg")
+      size: cover
+      position:
+        x: center
+        y: 80%
+
+    #nav-bar
+      height: 10%
+      ul
+        list-style-type: none
+        float: right
+        margin: 2% 3%
+        li
+          padding: 40px 70px
+          display: inline
+        li:last-child
+          padding-right: 0px
+
+    #title
+      h1
+        width: 100%
+        text-align: center
+        color: #000000BF
+        font:
+          family: 'peace sans', sans
+          size: 180px
+        margin-top: 7%
+  
+  #body
+    #our-story
+      height: 400px
+      background-color: #242334
