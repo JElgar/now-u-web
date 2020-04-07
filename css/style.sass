@@ -7,6 +7,7 @@ $font-size: 25px
 $body-link-color: #00B9FF
 
 $break-point-mobile: 750px
+$break-point-tablet: 820px
 
 
 @font-face
@@ -77,6 +78,27 @@ html, body
         li:hover
           text-decoration: underline
           color: black
+      #hamburger-icon
+        display: none
+    @media (max-width: $break-point-tablet)
+      #nav-bar
+        #hamburger-icon
+          display: block
+          position: absolute
+          right: 0
+          top: 0
+          padding: 20px
+          color: $font-color
+          font:
+            size: 40px
+        ul
+          display: none
+          width: 100%
+          text-align: center
+          li
+            width: 100%
+            display: block
+            padding: 30px 0px
 
     #title
       height: 50vh
