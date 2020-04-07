@@ -45,12 +45,18 @@ html #header, body #header {
   background-position-y: 80%;
 }
 html #header #nav-bar, body #header #nav-bar {
+  position: none;
   height: 10%;
+}
+html #header #nav-bar .show .hide, body #header #nav-bar .show .hide {
+  display: unset;
 }
 html #header #nav-bar ul, body #header #nav-bar ul {
   list-style-type: none;
   float: right;
   margin: 2% 3%;
+  height: unset;
+  display: unset;
 }
 html #header #nav-bar ul li, body #header #nav-bar ul li {
   padding: 40px 55px;
@@ -79,10 +85,26 @@ html #header #nav-bar #hamburger-icon, body #header #nav-bar #hamburger-icon {
     color: #515151;
     font-size: 40px;
   }
+  html #header #nav-bar .show, body #header #nav-bar .show {
+    display: block;
+  }
+  html #header #nav-bar .hide, body #header #nav-bar .hide {
+    display: none;
+  }
   html #header #nav-bar ul, body #header #nav-bar ul {
     display: none;
+    position: fixed;
+    margin: 0;
+    height: 100%;
+    background-image: linear-gradient(rgba(36, 35, 52, 0),rgba(36, 35, 52, 0.1),rgba(36, 35, 52, 0.2), rgba(36, 35, 52, 100) ), url("../assets/img/background.jpg");
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 80%;
+    z-index: 1;
     width: 100%;
     text-align: center;
+    padding-left: 0px;
+    padding-top: 20%;
   }
   html #header #nav-bar ul li, body #header #nav-bar ul li {
     width: 100%;
