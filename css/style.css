@@ -16,13 +16,20 @@ html a, body a {
   text-decoration: none;
   list-style-type: none;
 }
+html p, body p {
+  padding: 0 2em;
+  margin: 0;
+}
+html b, body b {
+  font-weight: 900;
+}
 html .button, body .button {
   background-color: white;
   color: #515151;
 }
 html .heading, body .heading {
   margin: 0;
-  padding-top: 40px;
+  padding: 40px 0px;
   width: 100%;
   text-align: center;
   color: white;
@@ -196,10 +203,12 @@ html #body, body #body {
 }
 html #body #our-story, body #body #our-story {
   background-color: #242334;
-  height: 1000px;
 }
 html #body #the-app, body #body #the-app {
   background-color: #242334;
+}
+html #body #the-app ol, body #body #the-app ol {
+  padding: 0 4em;
 }
 html #body #the-app #get-section, body #body #the-app #get-section {
   text-align: center;
@@ -217,6 +226,7 @@ html #body #the-app #get-section a:hover, body #body #the-app #get-section a:hov
 html #body #the-app #get-section #submit, body #body #the-app #get-section #submit {
   margin-left: 0px;
   padding: 17.7px;
+  margin-bottom: 2em;
 }
 html #body #get-inv, body #body #get-inv {
   color: #515151;
