@@ -54,6 +54,17 @@ html #header, body #header {
   background-position-x: center;
   background-position-y: 80%;
 }
+html #header .logo, body #header .logo {
+  position: absolute;
+  top: 20px;
+}
+html #header .logo p, body #header .logo p {
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 142px;
+  font-size: 30px;
+}
 html #header #nav-bar, body #header #nav-bar {
   position: none;
   height: 10%;
