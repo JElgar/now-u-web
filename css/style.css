@@ -252,6 +252,7 @@ html #body #the-app #get-section #mc_embed_signup_scroll, body #body #the-app #g
 }
 html #body #the-app #get-section #mc_embed_signup_scroll .mc-field-group, body #body #the-app #get-section #mc_embed_signup_scroll .mc-field-group {
   padding: 20px;
+  width: unset;
 }
 html #body #the-app #get-section #submit-container, body #body #the-app #get-section #submit-container {
   display: flex;
