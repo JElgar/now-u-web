@@ -201,13 +201,25 @@ html #body #the-app, body #body #the-app {
   border-top: 5px solid #011A42;
 }
 html #body #the-app #timer_container {
-  margin: 50px 0 0 0;
+  display: grid;
+  width: 70%;
+  align-items: center;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(100px, auto);
 }
-html #body #the-app #timer_container #app_timer {
-  font-size: 50px;
+html #body #the-app #timer_container p {
+  margin: 0 auto;
+  width: 80px;
+  height: 80px;
+  font-size: 40px;
+  line-height: 80px;
+  font-family: Arial, Helvetica, sans-serif;
   color: #011A42;
   padding: 0;
-  font-weight: normal;
+  font-weight: bold;
+  border: 5px solid #FF8800;
+  border-radius: 15px;
 }
 #body #the-app #device_container {
   display: inline-grid;
@@ -216,9 +228,16 @@ html #body #the-app #timer_container #app_timer {
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: minmax(100px, auto);
 }
-#body #the-app #device_container #sign-up-container {
+#body #the-app #device_container #sign-up-container form {
+  text-align: center;
+  display: inline-block;
   padding: 10px;
   color:  #ff8800;
+}
+#body #the-app #device_container #sign-up-container h2 {
+  font-size: 48px;
+  color:  #ff8800;
+  margin: 20px 0 0 0;
 }
 #body #the-app #device_container #sign-up-container #mc_embed_signup input {
   display: inline-block;
@@ -242,7 +261,7 @@ html #body #the-app #timer_container #app_timer {
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
-  color: #FF8800;
+  color: white;
   border: none;
   border-radius: 25px;
   padding: 15px;
@@ -308,14 +327,12 @@ html #body #the-app #get-section #submit-container, body #body #the-app #get-sec
   justify-content: center;
 }
 html #body #get-inv, body #body #get-inv {
+  width: 70%;
+  margin: 0 auto;
   padding: 100px 0 100px 0;
   color: #515151;
   text-align: center;
   border-top: 5px solid #011A42;
-}
-html #body #get-inv, body #body #get-inv p {
-  width: 70%;
-  margin: 0 auto;
 }
 html #body #get-inv #contact-icons, body #body #get-inv #contact-icons {
   padding: 20px;
@@ -348,7 +365,7 @@ html #body #footer ul li, body #body #footer ul li {
   display: inline;
 }
 html #body #footer ul li a, body #body #footer ul li a {
-  color: #FF8800;
+  color: white;
 }
 html #body #footer ul li:last-child, body #body #footer ul li:last-child {
   padding-right: 40px;
@@ -360,6 +377,7 @@ html #body #footer ul li:hover, body #body #footer ul li:hover {
 
 /*# sourceMappingURL=style.css.map */
 
+/* RESPONSIVE CSS */
 @media (max-width: 1105px) {
   html #header .logo, body #header .logo {
     padding-left: 20px;
@@ -402,19 +420,14 @@ html #body #footer ul li:hover, body #body #footer ul li:hover {
 }
 
 @media (max-width: 640px) {
-  html #header #head_btn_container {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
+  html .heading, body .heading {
+    font-size: 32px;
   }
-  #body #the-app #device_container {
-    display: block;
+  #body #the-app #device_container #sign-up-container h2 {
+    font-size: 32px;
   }
-  html #body #footer ul li a, body #body #footer ul li a {
-    font-size: 10px;
-  }
-  html #body #get-inv #contact-icons a span, body #body #get-inv #contact-icons a span {
-    padding: 0;
+  html #body #get-inv p {
+    font-size: 18px;
   }
   html #header #title, body #header #title {
     margin-top: 10vh;
@@ -438,4 +451,76 @@ html #body #footer ul li:hover, body #body #footer ul li:hover {
     left: unset;
     font-size: 8vw;
   }
+  html #header #head_btn_container {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+  html #body #our-story, body #body #our-story p, html #body #the-app, body #body #the-app p {
+    font-size: 14px;
+  }
+  #body #the-app #device_container #sign-up-container {
+    padding-bottom: 100px;
+  }
+  #body #the-app #device_container #sign-up-container #mc_embed_signup input {
+    width: 200px;
+  }
+  #body #the-app #device_container #sign-up-container form {
+    text-align: center;
+    display: inline-block;
+  }
+  #body #the-app #device_container {
+    display: inline-block;
+  }
+  #body #the-app #device_container #device img {
+    width: 100%;
+  }
+  html #body #the-app #timer_container {
+    display: inline-block;
+  }
+  html #body #the-app #timer_container div {
+    padding: 20px 0 0 0;
+  }
+  html #body #our-story, html #body #the-app, html #body #get-inv {
+    padding: 50px 0 50px 0;
+  }
+  html #body #footer ul li, body #body #footer ul li {
+    padding:  10px 10px;
+  }
+  html #body #get-inv #contact-icons a span, body #body #get-inv #contact-icons a span {
+    padding: 0;
+  }
+  html #body #footer ul li a, body #body #footer ul li a {
+    font-size: 10px;
+  }
 }
+
+/* DEVICE ROTATE */
+.device-rotate {
+  min-width: 100vw;
+  min-height: 100vh;
+  position: fixed;
+  z-index: 100;
+  background-image: url("../assets/img/rotation.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: none;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 850px) and (orientation: Landscape) {
+  .device-rotate {
+    display: block;
+    min-width: -webkit-fill-available !important;
+    min-height: -webkit-fill-available !important;
+  }
+
+  html {
+    overflow: hidden;
+  }
+
+}
+/* DEVICE ROTATE */
+
+/* RESPONSIVE CSS */
